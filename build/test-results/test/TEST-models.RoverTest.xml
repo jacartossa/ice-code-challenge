@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="models.RoverTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-06-21T15:28:41" hostname="DESKTOP-DCCFRV4" time="0.645">
+  <properties/>
+  <testcase name="given_rover_when_move_then_updateCoordinate()" classname="models.RoverTest" time="0.504"/>
+  <testcase name="given_rover_when_rotatedRight_then_updateDirection()" classname="models.RoverTest" time="0.039"/>
+  <testcase name="given_rover_when_rotatedLeft_then_updateDirection()" classname="models.RoverTest" time="0.004"/>
+  <testcase name="given_rover_when_movedOffTabletop_then_noMovement()" classname="models.RoverTest" time="0.038"/>
+  <testcase name="given_rover_when_badRotationValue_then_invalidRotationException()" classname="models.RoverTest" time="0.015"/>
+  <system-out><![CDATA[2023-06-21 17:28:41.549  INFO 18304 --- [    Test worker] models.Rover                             : Moving rover to newLocation: x:0, y:1
+2023-06-21 17:28:41.630  INFO 18304 --- [    Test worker] models.Rover                             : New direction: EAST calculated from rotation: RIGHT
+2023-06-21 17:28:41.663  INFO 18304 --- [    Test worker] models.Rover                             : New direction: WEST calculated from rotation: LEFT
+2023-06-21 17:28:41.708  INFO 18304 --- [    Test worker] models.Rover                             : Moving rover to newLocation: x:0, y:1
+2023-06-21 17:28:41.709  WARN 18304 --- [    Test worker] models.Rover                             : Movement to newLocation: x:0, y:2 is invalid
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

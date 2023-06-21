@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="application.MoonRoverApplicationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-06-21T15:28:41" hostname="DESKTOP-DCCFRV4" time="0.019">
+  <properties/>
+  <testcase name="given_noRover_when_turned_then_roverDoesNotExistException()" classname="application.MoonRoverApplicationTest" time="0.005"/>
+  <testcase name="given_noRover_when_moved_then_roverDoesNotExistException()" classname="application.MoonRoverApplicationTest" time="0.002"/>
+  <testcase name="when_placeRoverOnTabletop_then_roverExists()" classname="application.MoonRoverApplicationTest" time="0.003"/>
+  <testcase name="given_rover_when_moved_then_locationUpdated()" classname="application.MoonRoverApplicationTest" time="0.001"/>
+  <testcase name="when_placeRoverOffTabletop_then_roverOutOfBoundsException()" classname="application.MoonRoverApplicationTest" time="0.002"/>
+  <testcase name="given_noRover_when_retrieved_then_roverDoesNotExistException()" classname="application.MoonRoverApplicationTest" time="0.001"/>
+  <testcase name="given_rover_when_turned_then_directionUpdated()" classname="application.MoonRoverApplicationTest" time="0.002"/>
+  <system-out><![CDATA[2023-06-21 17:28:41.028  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Turn rover call started with rotation:RIGHT
+2023-06-21 17:28:41.028 ERROR 18304 --- [    Test worker] application.MoonRoverApplication         : No rover available to turn
+2023-06-21 17:28:41.030  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Move rover call started
+2023-06-21 17:28:41.030 ERROR 18304 --- [    Test worker] application.MoonRoverApplication         : No rover available to move
+2023-06-21 17:28:41.032  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Place rover call started with details x:0, y:3, direction:EAST
+2023-06-21 17:28:41.032  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Successful place rover call with location x:0, y:3, direction:EAST
+2023-06-21 17:28:41.032  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Get rover call started
+2023-06-21 17:28:41.032  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Successful get rover call
+2023-06-21 17:28:41.035  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Place rover call started with details x:0, y:3, direction:EAST
+2023-06-21 17:28:41.035  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Successful place rover call with location x:0, y:3, direction:EAST
+2023-06-21 17:28:41.035  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Move rover call started
+2023-06-21 17:28:41.035  INFO 18304 --- [    Test worker] models.Rover                             : Moving rover to newLocation: x:1, y:3
+2023-06-21 17:28:41.036  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Successful move rover call
+2023-06-21 17:28:41.036  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Get rover call started
+2023-06-21 17:28:41.036  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Successful get rover call
+2023-06-21 17:28:41.038  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Place rover call started with details x:-1, y:3, direction:EAST
+2023-06-21 17:28:41.038 ERROR 18304 --- [    Test worker] application.MoonRoverApplication         : Rover was placed off tabletop in location:x:-1, y:3
+2023-06-21 17:28:41.040  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Get rover call started
+2023-06-21 17:28:41.040 ERROR 18304 --- [    Test worker] application.MoonRoverApplication         : No rover available to report
+2023-06-21 17:28:41.041  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Place rover call started with details x:0, y:3, direction:EAST
+2023-06-21 17:28:41.041  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Successful place rover call with location x:0, y:3, direction:EAST
+2023-06-21 17:28:41.042  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Turn rover call started with rotation:RIGHT
+2023-06-21 17:28:41.042  INFO 18304 --- [    Test worker] models.Rover                             : New direction: SOUTH calculated from rotation: RIGHT
+2023-06-21 17:28:41.042  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Successful turn rover call with rotation:RIGHT
+2023-06-21 17:28:41.042  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Get rover call started
+2023-06-21 17:28:41.042  INFO 18304 --- [    Test worker] application.MoonRoverApplication         : Successful get rover call
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
